@@ -7,65 +7,153 @@
 	<meta charset="utf=8">
 	<meta description="9jashop" content="Shopping simplified">
 	<title>Arewa Store Inc.</title>
-	<link rel="stylesheet" href="projectx.css">
+	<link rel="stylesheet" href="projectxcss">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script rel="test/javascript" src="projectx.js"></script>
 	<script src="https://kit.fontawesome.com/ce3583eca6.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<style type="text/css">
+		html{
+			
+			margin: 0;
+			padding: 0;
+			font-family: sans-serif;
+  			line-height: 1.15;
+  			-webkit-text-size-adjust: 100%;
+		}
+		body{
+			background: #20c997;
+			font-family: sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		h1 {
+		  margin-top: 0;
+		  color: white;
+		  height: 50px;
+		  text-align: center;
+		  text-decoration: underline;
+		  background-color:#555;
+		}
+		img{
+			width: 20.5rem;
+			height: 10.5rem;
+
+		}
+		input[placeholder]{
+			color: black;
+		}
+		input{
+		  background-color: grey;
+		  color: white;
+		  border-radius: 27px;
+		  border: 1px solid white;
+		  width: 200px;
+		  height: 35px;
+		  margin: 5px;
+		  padding: 1px;
+
+		}
+		input:hover {
+  		  background-color: white;
+  		  color: black;
+}
+		button{
+		  padding: 3px;
+		  color: white;
+		  border-style: none;
+		  border-bottom: 1px solid black;
+		  border-radius: 3px;
+		  background-color: green;
+		}
+		.btn{
+		  background-color: green;
+		  border-radius: 27px;
+		  margin: 5px;
+		  width: 200px;
+		  height: 40px;
+		}
 		.signin{
 			align-items: center;
 		}
 		.icon-bar {
-			width: 100px;
+			font-size: 50px;
 			background: none;
-			margin: 0;
+			margin-bottom: 5rem;
 			padding: 0;
+			color: darkgreen;
 		}
 		.container1{
 			box-shadow: 0 18px 36px rgba(0,0,0,0.30), 0 14px 11px rgba(0,0,0,0.22);
       		text-align: center;
-      		margin-left: 500px;
+      		margin-left: 450px;
      		width: 500px;
       		height: 400px;
 			}
-			.footer-p{
-				margin-bottom: 5px;
+		.footer-p{
+				marginbottom: 5px;
+			}
+		.pfollow{
+			color: darkgreen;
+		}
+		p{
+			margin: 5px;
+			font-size: 14px;
+		}
+		.register{
+			color: darkgreen;
+			margin: 5px;
+			font-size: 12px;
+
+		}
+
+		footer {
+			  color: green;
+			  margin-bottom: 25px;
+			  padding: 5px;
+			  font-size: 16px;
+			  text-align: center;
 			}
 	</style>
 <main class="signin">
 	<div class="contain">
 		<img src="logo.png" alt="">
 	</div><br/>
-		<span class="icon-bar">
-			<a href="#"><i class="fa fa-home"></i></a>
+		<span >
+			<a class="icon-bar" href="index.html"><i class="fa fa-home"></i></a>
 		</span>
 	<div class="container1">
 		<h1>Please Sign In</h1>
-		<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post"><br/>
+		<form name="myForm" action="/index.html" onsubmit="return validateForm()" method="post"><br/>
 			
 			<div>
-				<input type="text" name="fname" placeholder="FirstName"><br/>
-				<input type="text" name="lname" placeholder="LastName"><br/>
-				<button class="btn" type="submit" value="Submit">Submit</button>
+				<label>Username or Email<br/><input type="text/email" name="username" placeholder="username" required/></label><br/>
+				<label>Password<br/><input type="password" name="password" placeholder="password" required/></label><br/>
+				<button class="btn" type="submit" value="Submit">SING-IN</button>
 			</div>
 		</form>
+		<div>
+		<p>Don't have anaccount?</p>
+		<a class="register" href="sign-up.html">CREATE ACCOUNT</a>
 	</div>
+	</div>
+	
 </main>
-</body>
+
 <br>
 <br>
 <footer>
-		<div class="pfollow">
+		<div>
 			<div> Contact Us</div>
-				<a class="pfollow" href="#"><i class="fa fa-facebook"></i></a>
-				<a class="pfollow" href="#"><i class="fa fa-twitter"></i></a>
-				<a class="pfollow" href="#"><i class="fa fa-instagram"></i></a>
-				<a class="pfollow" href="#"><i class="fa fa-whatsapp"></i></a>
-				<a class="pfollow" href="https://github.com/Danmasanii"><i class="fa fa-github"></i></a>
+			<a class="pfollow" href="#"><i class="fa fa-facebook"></i></a>
+			<a class="pfollow" href="#"><i class="fa fa-twitter"></i></a>
+			<a class="pfollow" href="#"><i class="fa fa-instagram"></i></a>
+			<a class="pfollow" href="#"><i class="fa fa-whatsapp"></i></a>
+			<a class="pfollow" href="https://github.com/Danmasanii"><i class="fa fa-github"></i></a>
 			<div class="footer-p">&copy; Copyright Protected 2020.</div>
 			<div class="footer-p">Arewa Stores. All rights reserved.</div>
 		</div>
  </footer>
+ </body>
 </html>
